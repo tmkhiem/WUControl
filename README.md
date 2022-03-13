@@ -13,6 +13,8 @@ Windows Update manual control
 
 This tool enables manual overriding the Windows Update component and avoid nasty unexpected reboots. There is only two buttons: Enable update and Disable update which does the exact function it claims. 
 
+Do note that this tool does NOT stop the Windows Update services. Instead, it just points WU to localhost, where obviously no WU server (unless you do) would be running.
+
 ## Why?
 
 Windows Update mostly sucks at deciding when to install updates. Even when it does, there's like a ton of small updates that needs to crank up my CPU to 100% for 10s of minutes. This is highly undesirable when I am travelling and has to work on battery. On desktop, especially demanding work programs (e.g Visual Studio with a huge solution), WU has a habit to chime in at the most intense phase (e.g building solution). 
